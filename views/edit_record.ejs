@@ -1,0 +1,32 @@
+<%- include layouts/header.ejs %>
+
+        <div class="page-data">
+            
+            <form method="post" action="/records/edit/<%=data[0].id%>">
+                <table cellpadding="11">
+                <tr>
+                    <td class="label">Longitude</td><td>: <input type="text" name="longitude" value="<%=data[0].longitude%>" required></td>
+                 </tr>
+                <tr>
+                    <td class="label">Latitude</td><td>: <input type="text" name="latitude" value="<%=data[0].latitude%>" required></td>
+                 </tr>
+                 
+                <tr>
+                    <td class="label">Humidity</td><td>: <input type="text" value="<%=data[0].humidity%>" name="humidity" required></td>
+                 </tr>
+                  <tr>
+                    <td class="label">Temperature</td><td>: <input type="text" name="temperature" value="<%=data[0].temperature%>" required></td>
+                 </tr>
+                 <tr>
+                    <td class="label"></td>
+                    <td>
+                        &nbsp; <input type="submit" name="submit" value="Save">
+                       <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">
+                    </td>
+                 </tr>
+                </table>
+            </form>
+            
+        </div>
+        
+<%- include layouts/footer.ejs %>

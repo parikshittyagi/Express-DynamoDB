@@ -1,0 +1,16 @@
+{
+  "name": "DynamoDB-CURD",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.185.0",
+    "ejs": "^1.0.0",
+    "express": "^3.5.1",
+    "express-myconnection": "1.0.4",
+    "jade": "*",
+    "node-uuid": "^1.4.8"
+  }
+}
